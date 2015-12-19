@@ -1,0 +1,34 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+        <!-- 自定义旋转滚动条 -->
+    <style name="MyRotateProgressBar" parent="android:Widget.ProgressBar">
+
+        <!-- "android:indeterminateOnly"为不确定性，如果是旋转的滚动条，是不知道什么时候转完的，所以这个属性为true，而横向滚动条，是知道什么时候走完的，所以这个属性为false -->
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/my_rotate_progress_drawable</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+         <item name="android:indeterminateDuration">1000</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+    
+</resources>
